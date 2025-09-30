@@ -3,7 +3,7 @@
 //
 
 #include "patter.h"
-
+#include <cstdint>
 
 // TODO: smarter threshold. 
 // See https://github.com/nanoporetech/modkit/blob/master/filtering.md
