@@ -3,8 +3,7 @@
 //
 
 #include "add_cpg_counts.h"
-
-
+#include <cstdint>'
 /***************************************************
  *                                                 *
  *         Region string parsing                   *
