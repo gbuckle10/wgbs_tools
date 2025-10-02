@@ -15,7 +15,7 @@ def index2chrom(site, genome):
 def get_genome_name(gname):
     if gname is None or gname == 'default':
         path = Path(op.realpath(__file__))
-        refdir = op.join(op.join(path.parent.parent.parent, 'references'), 'default')
+        refdir = op.join(op.join(path.parent.parent.parent.parent.parent, 'reference_genomes'), 'default')
         return os.readlink(refdir)
     return gname
 

@@ -87,7 +87,7 @@ class GenomeRefPaths:
         if not self.genome:
             self.genome = 'default'
         path = Path(op.realpath(__file__))
-        refdir = op.join(op.join(path.parent.parent.parent, 'references'), self.genome)
+        refdir = op.join(op.join(path.parent.parent.parent.parent.parent, 'reference_genomes'), self.genome)
         if self.genome == 'default':
             self.genome = os.readlink(refdir)
             refdir = str(Path(refdir).resolve())

@@ -8,7 +8,7 @@ from utils_wgbs import eprint, IllegalArgumentError
 
 
 path = Path(op.realpath(__file__))
-refdir = op.join(path.parent.parent.parent, 'references')
+refdir = op.join(path.parent.parent.parent.parent.parent, 'reference_genomes')
 
 def print_genomes():
     genomes = get_genomes()

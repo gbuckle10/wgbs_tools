@@ -93,7 +93,7 @@ class InitGenome:
 
     def setup_dir(self):
         path = Path(op.realpath(__file__))
-        out_dir = op.join(op.join(path.parent.parent.parent, 'references'),
+        out_dir = op.join(op.join(path.parent.parent.parent.parent.parent, 'reference_genomes'),
                           self.name)
         # if the requested genome name already exist:
         # abort if --force was not specified, or delete the existing directory.
@@ -184,6 +184,7 @@ class InitGenome:
 
         # setup as default genome
         if not self.args.no_default:
+
             set_def_ref(self.name)
 
     def add_supp(self):
